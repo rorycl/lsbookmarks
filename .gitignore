@@ -1,0 +1,5 @@
+# lsbookmarks gitignore
+.DS_Store
+*.swp
+*.swo
+lsbookmarks
