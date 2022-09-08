@@ -3,6 +3,7 @@
 List and interactively search firefox bookmarks from the Linux terminal
 using the wonderful
 [bubbletea](https://github.com/charmbracelet/bubbletea) TUI library.
+Hitting `enter` copies the selected url to the clipboard.
 
 	Usage:
 	  lsbookmarks 
@@ -21,6 +22,14 @@ using the wonderful
 ## Example
 
 ![lsbookmarks](lsbookmarks.gif)
+
+## Requirements
+
+1. Linux
+2. Providing the path to the Firefox backup directory either on the
+   command line or in a `~/.lsbookmarksrc` file
+3. The xlib requirements set out in `golang.design/x/clipboard`,
+   currently `libx11-dev`, `xorg-dev` or `libX11-devel`.
 
 ## License
 
