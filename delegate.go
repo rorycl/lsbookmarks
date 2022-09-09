@@ -17,7 +17,7 @@ func init() {
 	// initialise clipboard
 	err := clipboard.Init()
 	if err != nil {
-		panic(fmt.Sprintf("clipboard could not be initalised %s", err))
+		panic(fmt.Sprintf("clipboard could not be initialised %s", err))
 	}
 }
 

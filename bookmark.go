@@ -112,12 +112,14 @@ func listBookmarks(b Bookmark) {
 // get latest bookmark backup file
 func getLatestBookmarkBackup(path string) (string, error) {
 	var filename string
+	var err error
 	files, err := os.ReadDir(path)
 	if err != nil {
 		return filename, err
 	}
 	// sort.Slice(files, func(i, j int) bool { return files[i].Info.ModTime() > files[j].Info.ModTime() })
-	file, err := func() (de os.DirEntry, err error) {
+	var file os.DirEntry
+	file, err = func() (de os.DirEntry, err error) {
 		var latestFile os.DirEntry
 		var latestFileInfo fs.FileInfo
 		for _, f := range files {
@@ -157,7 +159,6 @@ func extractBookmarks(path string) (Bookmarks, error) {
 	f, err := os.Open(filepath.Join(path, file))
 	if err != nil {
 		return bookmarks, fmt.Errorf("could not open file %s: %s", file, err)
-		os.Exit(1)
 	}
 	defer f.Close()
 
