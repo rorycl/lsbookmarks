@@ -2,7 +2,7 @@
 
 List and interactively search firefox bookmarks (in backup jsonlzw
 format) from the Linux terminal using the wonderful
-[bubbletea](https://github.com/charmbracelet/bubbletea) TUI library.
+[Bubble Tea](https://github.com/charmbracelet/bubbletea) TUI library.
 Hitting `enter` copies the selected url to the clipboard.
 
 	Usage:
@@ -33,7 +33,7 @@ Hitting `enter` copies the selected url to the clipboard.
 
 ## Notes
 
-This program a simple rewrite of the bubbletea [list
+This program a simple rewrite of the Bubble Tea [list
 fancy](https://github.com/charmbracelet/bubbletea/tree/master/examples/list-fancy)
 example with some simple bookmark parsing.
 
