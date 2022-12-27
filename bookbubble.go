@@ -5,6 +5,10 @@
 
 package main
 
+import (
+	"github.com/rorycl/lsbookmarks/bookmark"
+)
+
 type bmark struct {
 	title string
 	uri   string
@@ -39,7 +43,7 @@ type Bmarks []bmark
 
 func getBmarks(path string) (Bmarks, error) {
 	var bmarks Bmarks
-	bookmarks, err := extractBookmarks(path)
+	bookmarks, err := bookmark.ExtractBookmarks(path)
 	if err != nil {
 		return bmarks, err
 	}

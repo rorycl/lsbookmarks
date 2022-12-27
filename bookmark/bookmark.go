@@ -1,4 +1,4 @@
-package main
+package bookmark
 
 import (
 	"bytes"
@@ -149,7 +149,8 @@ func getLatestBookmarkBackup(path string) (string, error) {
 	return file.Name(), nil
 }
 
-func extractBookmarks(path string) (Bookmarks, error) {
+// ExtractBookmarks extracts bookmarks from a directory path
+func ExtractBookmarks(path string) (Bookmarks, error) {
 
 	file, err := getLatestBookmarkBackup(path)
 	if err != nil {

@@ -33,7 +33,7 @@ Hitting `enter` copies the selected url to the clipboard.
 
 ## Notes
 
-This program a simple rewrite of the Bubble Tea [list
+This program is a simple rewrite of the Bubble Tea [list
 fancy](https://github.com/charmbracelet/bubbletea/tree/master/examples/list-fancy)
 example with some simple bookmark parsing.
 
@@ -48,7 +48,7 @@ example with some simple bookmark parsing.
 
 See [alfred bookmarks](https://github.com/konoui/alfred-bookmarks) for
 more complete bookmark support across Firefox, Google Chrome and Safari.
-That lzw decompressor didn't work for me:
+The lzw decompressor in alfred bookmarks didn't work for me:
 [leatherman](https://github.com/frioux/leatherman/tree/main/pkg/mozlz4)
 works well.
 
